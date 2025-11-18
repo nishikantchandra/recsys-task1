@@ -58,7 +58,7 @@ window.onload = async function() {
         if (storedSubGenres) masterSubGenres = JSON.parse(storedSubGenres);
         if (storedThemes) masterThemes = JSON.parse(storedThemes);
         
-        let statusMsg = "Data loaded. Please enter your Cerebras API key and select a movie to analyze.";
+        let statusMsg = "Data loaded. Select a movie to analyze.";
         if (masterSubGenres.length > 0 || masterThemes.length > 0) {
             statusMsg += `<br><small style='color: #666;'>Master lists loaded: ${masterSubGenres.length} sub-genres, ${masterThemes.length} themes</small>`;
         }
