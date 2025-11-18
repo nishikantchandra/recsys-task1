@@ -9,29 +9,13 @@
 <body>
     <div class="container">
         <h1>Content-Based Movie Recommender</h1>
-        <p>Select a movie to analyze its sub-genre and themes using Cerebras AI!</p>
-        
-        <div class="api-key-section">
-            <label for="api-key-input">Cerebras API Key:</label>
-            <input type="password" id="api-key-input" placeholder="Enter your Cerebras API key">
-            <small style="color: #666; display: block; margin-top: 5px;">Your API key is stored locally and never sent to any server except Cerebras.</small>
-        </div>
+        <p>Select a movie you like, and we'll find similar ones based on genres!</p>
         
         <div class="controls">
             <select id="movie-select">
                 <option value="" disabled selected>Select a movie</option>
             </select>
-            <button id="recommend-btn" onclick="getRecommendations()">Analyze Movie</button>
-        </div>
-        
-        <div class="task-buttons">
-            <h3>Consolidate & Finalize</h3>
-            <button id="consolidate-btn" onclick="consolidateKeywords()">Consolidate Keywords</button>
-            <button id="finalize-btn" onclick="finalizeAndEncode()">Finalize & Encode</button>
-            <small style="color: #666; display: block; margin-top: 10px;">
-                Cluster similar terms into master lists (e.g., "Sci-Fi" → "Science Fiction")<br>
-                Classify selected movie using master lists for consistency
-            </small>
+            <button id="recommend-btn" onclick="getRecommendations()">Get Recommendations</button>
         </div>
         
         <div id="result-box">
